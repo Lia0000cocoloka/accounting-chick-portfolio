@@ -446,7 +446,7 @@ const addTx = async () => {
       return;
     }
 
-    // editingId 這時還是原本的值（下面才 setEditingId(null)），可以用來判斷是新增還是編輯
+    // 這次 render 的函式抓住的是這次 render 的 state 快照。
     showToast(editingId ? "已更新這筆記錄" : "已記帳，餵飽小雞了");
 
     setFAmt("");
